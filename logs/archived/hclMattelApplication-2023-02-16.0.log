@@ -1,0 +1,15 @@
+2023-02-16 11:06:05,202 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HclMattelApplication using Java 17.0.5 with PID 8768 (D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication\target\classes started by snugt in D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication)
+2023-02-16 11:06:05,208 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-02-16 11:06:05,209 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-16 11:06:05,286 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-16 11:06:05,287 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-16 11:06:06,550 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
+2023-02-16 11:06:06,562 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
+2023-02-16 11:06:06,563 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-16 11:06:06,563 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-16 11:06:06,619 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-16 11:06:06,619 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1330 ms
+2023-02-16 11:06:07,158 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-16 11:06:07,172 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
+2023-02-16 11:06:07,208 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
+2023-02-16 11:06:07,225 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HclMattelApplication in 2.769 seconds (process running for 3.48)

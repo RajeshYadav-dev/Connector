@@ -1,0 +1,88 @@
+2023-02-20 15:30:52,047 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HclMattelApplication using Java 17.0.5 with PID 29564 (D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication\target\classes started by snugt in D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication)
+2023-02-20 15:30:52,065 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-02-20 15:30:52,067 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-20 15:30:52,340 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-20 15:30:52,342 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-20 15:30:54,617 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
+2023-02-20 15:30:54,642 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
+2023-02-20 15:30:54,642 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-20 15:30:54,643 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-20 15:30:54,737 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-20 15:30:54,738 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2395 ms
+2023-02-20 15:30:55,370 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-02-20 15:30:55,390 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
+2023-02-20 15:30:55,442 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
+2023-02-20 15:30:55,467 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HclMattelApplication in 4.493 seconds (process running for 7.409)
+2023-02-20 15:46:11,347 INFO org.apache.juli.logging.DirectJDKLog [http-nio-7080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-20 15:46:11,350 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-20 15:46:11,370 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7080-exec-1] Completed initialization in 20 ms
+2023-02-20 15:46:11,439 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] *******inside the APIRequestService method**********
+2023-02-20 15:46:11,443 INFO com.snug.hcl.request.ValidateUserRequest [http-nio-7080-exec-1] Final validateUserRequestURL: https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:46:11,444 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] Request Map --->{REQUEST_URL=https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1}
+2023-02-20 15:46:11,444 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] HostURL =https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:46:11,449 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] GET: Request came for Request URL :https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:46:13,030 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] RESPONSE code :200
+2023-02-20 15:46:13,030 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] RESPONSE message OK
+2023-02-20 15:46:13,041 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 15:46:13,042 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 15:46:13,043 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] raw response--->{"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}
+2023-02-20 15:46:13,046 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-1] ************************ INSIDE GetEmpIdParser METHOD ************************
+2023-02-20 15:46:13,064 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-1] **********************outside GetEmpIdParser METHOD ************************
+2023-02-20 15:46:13,064 INFO com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] Final API Response: {statuscode=200, data={active=true, vip=false, email=Alexis.Sterling@Mattel.com, status=200}, statusdesc=OK}
+2023-02-20 15:46:13,064 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] *******outside the APIRequestService**********
+2023-02-20 15:58:23,931 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] *******inside the APIRequestService method**********
+2023-02-20 15:58:23,946 INFO com.snug.hcl.request.ValidateUserRequest [http-nio-7080-exec-3] Final validateUserRequestURL: https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:58:23,946 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] Request Map --->{REQUEST_URL=https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1}
+2023-02-20 15:58:23,946 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-3] HostURL =https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:58:23,946 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-3] GET: Request came for Request URL :https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 15:58:25,056 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-3] RESPONSE code :200
+2023-02-20 15:58:25,057 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-3] RESPONSE message OK
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-3] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] raw response--->{"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-3] ************************ INSIDE GetEmpIdParser METHOD ************************
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-3] **********************outside GetEmpIdParser METHOD ************************
+2023-02-20 15:58:25,057 INFO com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] Final API Response: {statuscode=200, data={active=true, vip=false, email=Alexis.Sterling@Mattel.com, status=200}, statusdesc=OK}
+2023-02-20 15:58:25,057 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-3] *******outside the APIRequestService**********
+2023-02-20 16:34:57,568 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] *******inside the APIRequestService method**********
+2023-02-20 16:34:57,604 INFO com.snug.hcl.request.ValidateUserRequest [http-nio-7080-exec-5] Final validateUserRequestURL: https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:34:57,604 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] Request Map --->{REQUEST_URL=https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1}
+2023-02-20 16:34:57,604 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-5] HostURL =https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:34:57,604 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-5] GET: Request came for Request URL :https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:34:58,545 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-5] RESPONSE code :200
+2023-02-20 16:34:58,545 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-5] RESPONSE message OK
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-5] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] raw response--->{"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-5] ************************ INSIDE GetEmpIdParser METHOD ************************
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-5] **********************outside GetEmpIdParser METHOD ************************
+2023-02-20 16:34:58,548 INFO com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] Final API Response: {statuscode=200, data={active=true, vip=false, email=Alexis.Sterling@Mattel.com, status=200}, statusdesc=OK}
+2023-02-20 16:34:58,548 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-5] *******outside the APIRequestService**********
+2023-02-20 16:44:01,852 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] *******inside the APIRequestService method**********
+2023-02-20 16:44:01,852 INFO com.snug.hcl.request.ValidateUserRequest [http-nio-7080-exec-7] Final validateUserRequestURL: https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:44:01,852 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] Request Map --->{REQUEST_URL=https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1}
+2023-02-20 16:44:01,852 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-7] HostURL =https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:44:01,852 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-7] GET: Request came for Request URL :https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=978601&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-20 16:44:03,769 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-7] RESPONSE code :200
+2023-02-20 16:44:03,770 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-7] RESPONSE message OK
+2023-02-20 16:44:03,771 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-7] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 16:44:03,771 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}}
+2023-02-20 16:44:03,775 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] raw response--->{"result":[{"active":"true","vip":"false","email":"Alexis.Sterling@Mattel.com"}]}
+2023-02-20 16:44:03,776 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-7] ************************ INSIDE GetEmpIdParser METHOD ************************
+2023-02-20 16:44:03,776 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-7] **********************outside GetEmpIdParser METHOD ************************
+2023-02-20 16:44:03,776 INFO com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] Final API Response: {statuscode=200, data={active=true, vip=false, email=Alexis.Sterling@Mattel.com, status=200}, statusdesc=OK}
+2023-02-20 16:44:03,776 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-7] *******outside the APIRequestService**********
+2023-02-20 16:44:59,189 DEBUG com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] *******inside the IncidentRequestService method**********
+2023-02-20 16:44:59,249 INFO com.snug.hcl.request.IncidentTicketRequest [http-nio-7080-exec-8] Final IncidentTicketRequestURL: https://mattelmygto.service-now.com/api/matt3/sivr/incident/INC0820476
+2023-02-20 16:44:59,250 DEBUG com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] Request Map --->{REQUEST_URL=https://mattelmygto.service-now.com/api/matt3/sivr/incident/INC0820476}
+2023-02-20 16:44:59,252 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-8] HostURL =https://mattelmygto.service-now.com/api/matt3/sivr/incident/INC0820476
+2023-02-20 16:44:59,253 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-8] GET: Request came for Request URL :https://mattelmygto.service-now.com/api/matt3/sivr/incident/INC0820476
+2023-02-20 16:45:01,691 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-8] RESPONSE code :200
+2023-02-20 16:45:01,694 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-8] RESPONSE message OK
+2023-02-20 16:45:01,695 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-8] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":{"number":"INC0820476","status":"7","assignment_group":"MS_EUS_SD_English","employee_number":"978601","pending_reason":"","sla_status":"false"}}}
+2023-02-20 16:45:01,695 DEBUG com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":{"number":"INC0820476","status":"7","assignment_group":"MS_EUS_SD_English","employee_number":"978601","pending_reason":"","sla_status":"false"}}}
+2023-02-20 16:45:01,695 DEBUG com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] raw response--->{"result":{"number":"INC0820476","status":"7","assignment_group":"MS_EUS_SD_English","employee_number":"978601","pending_reason":"","sla_status":"false"}}
+2023-02-20 16:45:01,724 DEBUG com.snug.hcl.parser.IncidentRequestParser [http-nio-7080-exec-8] ************************ INSIDE IncidentRequestParserMETHOD ************************
+2023-02-20 16:45:01,732 DEBUG com.snug.hcl.parser.IncidentRequestParser [http-nio-7080-exec-8] **********************outside IncidentRequestParser METHOD ************************
+2023-02-20 16:45:01,735 INFO com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] Final API Response: {statuscode=200, data={number=INC0820476, ticket_status_desc=Closed, sla_status=false, employee_number=978601, sla_time=, status=7}, statusdesc=OK}
+2023-02-20 16:45:01,735 DEBUG com.snug.hcl.service.IncidentRequestService [http-nio-7080-exec-8] *******outside the IncidentRequestService method**********

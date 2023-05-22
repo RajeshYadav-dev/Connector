@@ -1,0 +1,52 @@
+2023-02-02 11:51:02,682 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HclMattelApplication using Java 17.0.5 with PID 31728 (D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication\target\classes started by snugt in D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication)
+2023-02-02 11:51:02,690 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-02-02 11:51:02,692 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:02,763 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 11:51:02,764 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 11:51:03,874 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
+2023-02-02 11:51:03,889 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
+2023-02-02 11:51:03,891 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-02 11:51:03,892 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-02 11:51:03,981 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:03,982 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1216 ms
+2023-02-02 11:51:04,835 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-02 11:51:04,861 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
+2023-02-02 11:51:04,958 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
+2023-02-02 11:51:04,980 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HclMattelApplication in 2.672 seconds (process running for 3.496)
+2023-02-02 11:55:50,837 INFO org.apache.juli.logging.DirectJDKLog [http-nio-7080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 11:55:50,849 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-02 11:55:50,877 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-7080-exec-1] Completed initialization in 27 ms
+2023-02-02 11:55:50,971 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] *******inside the APIRequestService method**********
+2023-02-02 11:55:50,974 INFO com.snug.hcl.request.ValidateUserRequest [http-nio-7080-exec-1] Final validateUserRequestURL: https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=093074&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-02 11:55:50,975 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] Request Map --->{REQUEST_URL=https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=093074&sysparm_fields=email,active,vip&sysparm_limit=1}
+2023-02-02 11:55:50,976 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] HostURL =https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=093074&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-02 11:55:50,981 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] GET: Request came for Request URL :https://mattelnewdevtemp.service-now.com/api/now/table/sys_user?sysparm_query=employee_number=093074&sysparm_fields=email,active,vip&sysparm_limit=1
+2023-02-02 11:55:52,653 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] RESPONSE code :200
+2023-02-02 11:55:52,653 INFO com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] RESPONSE message OK
+2023-02-02 11:55:52,674 DEBUG com.snug.hcl.utility.APIRequestUtility [http-nio-7080-exec-1] Response :{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"WillieMae.White@Mattel.com"}]}}
+2023-02-02 11:55:52,674 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] respMap --->{statuscode=200, statusdesc=OK, RESPONSEBODY={"result":[{"active":"true","vip":"false","email":"WillieMae.White@Mattel.com"}]}}
+2023-02-02 11:55:52,674 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] raw response--->{"result":[{"active":"true","vip":"false","email":"WillieMae.White@Mattel.com"}]}
+2023-02-02 11:55:52,696 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-1] ************************ INSIDE GetEmpIdParser METHOD ************************
+2023-02-02 11:55:52,723 DEBUG com.snug.hcl.parser.GetEmpIdParser [http-nio-7080-exec-1] **********************outside GetEmpIdParser METHOD ************************
+2023-02-02 11:55:52,723 INFO com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] Final API Response: {statuscode=200, data={active=true, vip=false, email=WillieMae.White@Mattel.com, status=200}, statusdesc=OK}
+2023-02-02 11:55:52,733 DEBUG com.snug.hcl.service.APIRequestService [http-nio-7080-exec-1] *******outside the APIRequestService**********
+2023-02-02 13:57:20,433 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 33 class path changes (0 additions, 0 deletions, 33 modifications)
+2023-02-02 13:57:21,947 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Pausing ProtocolHandler ["http-nio-7080"]
+2023-02-02 13:57:21,950 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping service [Tomcat]
+2023-02-02 13:57:21,965 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 13:57:22,025 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-7080"]
+2023-02-02 13:57:22,039 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Destroying ProtocolHandler ["http-nio-7080"]
+2023-02-02 13:57:22,311 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HclMattelApplication using Java 17.0.5 with PID 31728 (D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication\target\classes started by snugt in D:\SNUG\Snug_Project\Project\hclApiConnector\HCLMattelApplication)
+2023-02-02 13:57:22,312 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v3.0.1, Spring v6.0.3
+2023-02-02 13:57:22,313 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-02 13:57:22,797 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7080 (http)
+2023-02-02 13:57:22,799 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7080"]
+2023-02-02 13:57:22,801 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-02 13:57:22,802 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-02-02 13:57:22,839 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-02 13:57:22,840 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 521 ms
+2023-02-02 13:57:23,160 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-02 13:57:23,184 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7080"]
+2023-02-02 13:57:23,203 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7080 (http) with context path ''
+2023-02-02 13:57:23,212 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HclMattelApplication in 0.976 seconds (process running for 7581.728)
+2023-02-02 13:57:23,215 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
